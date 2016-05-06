@@ -1,0 +1,11 @@
+WCS\CoavBundle\Entity\flight:
+    type: entity
+    table: null
+    repositoryClass: WCS\CoavBundle\Repository\flightRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    lifecycleCallbacks: {  }
