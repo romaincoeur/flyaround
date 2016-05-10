@@ -31,3 +31,11 @@ WCS\CoavBundle\Entity\Terrain:
             length: 255
             nullable: true
     lifecycleCallbacks: {  }
+
+    oneToMany:
+        departures:
+            targetEntity: WCS\CoavBundle\Entity\Flight
+            mappedBy: departure
+        arrivals:
+            targetEntity: WCS\CoavBundle\Entity\Flight
+            mappedBy: arrival

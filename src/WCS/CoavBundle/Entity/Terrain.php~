@@ -255,42 +255,4 @@ class Terrain
     {
         return $this->departures;
     }
-    /**
-     * @var \Doctrine\Common\Collections\Collection
-     */
-    private $arrivals;
-
-
-    /**
-     * Add arrivals
-     *
-     * @param \WCS\CoavBundle\Entity\Flight $arrivals
-     * @return Terrain
-     */
-    public function addArrival(\WCS\CoavBundle\Entity\Flight $arrivals)
-    {
-        $this->arrivals[] = $arrivals;
-
-        return $this;
-    }
-
-    /**
-     * Remove arrivals
-     *
-     * @param \WCS\CoavBundle\Entity\Flight $arrivals
-     */
-    public function removeArrival(\WCS\CoavBundle\Entity\Flight $arrivals)
-    {
-        $this->arrivals->removeElement($arrivals);
-    }
-
-    /**
-     * Get arrivals
-     *
-     * @return \Doctrine\Common\Collections\Collection 
-     */
-    public function getArrivals()
-    {
-        return $this->arrivals;
-    }
 }

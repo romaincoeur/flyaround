@@ -17,6 +17,7 @@ class ReservationType extends AbstractType
         $builder
             ->add('name')
             ->add('nbSeats')
+            ->add('flight')
         ;
     }
     
