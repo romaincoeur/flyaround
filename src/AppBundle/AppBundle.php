@@ -1,9 +1,9 @@
 <?php
 
-namespace WCS\CoavBundle;
+namespace AppBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class WCSCoavBundle extends Bundle
+class AppBundle extends Bundle
 {
 }
